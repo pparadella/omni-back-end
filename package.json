@@ -4,7 +4,7 @@
   "description": "Parte do back-end para a aplicação.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/pparadella/omni-back-end#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "knex": "^0.20.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
