@@ -1,12 +1,10 @@
 const express = require('express');
 
+const OngController = require('./controllers/OngController');
+
 const routes = express.Router();
 
-routes.post('/users', (request, response) =>{
-    return response.json([{
-        name: 'Pedro Paradella2',
-        mat: 2222
-    }]);
-});
+routes.get('/ongs', OngController.index);
+routes.post('/ongs', OngController.create);
 
 module.exports = routes;
